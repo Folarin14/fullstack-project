@@ -1,0 +1,21 @@
+{
+    "name": "image_processing_api",
+    "version": "0.1",
+    "description": "A simple image processing API",
+    "homepage": "https://github.com/Folarin14/fullstack-project",
+    "author": "Afolarin Lawal",
+    "main": "server.js",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Folarin14/fullstack-project.git"
+    },
+    "scripts": {
+        "start": "node server.js"
+    },
+    "dependencies": {
+        "express": ">=4.16.1"
+    },
+    "engines": {
+        "npm": ">=18.12.0"
+    }
+}
