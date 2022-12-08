@@ -10,12 +10,18 @@
         "url": "https://github.com/Folarin14/fullstack-project.git"
     },
     "scripts": {
-        "start": "node server.js"
+        "start": "node server.js",
+        "prettier": "prettier --config .prettierrc *.js --write",
+        "eslint": "eslint --config .eslintrc *.js "
     },
     "dependencies": {
         "express": ">=4.16.1"
     },
     "engines": {
         "npm": ">=18.12.0"
+    },
+    "devDependencies": {
+        "eslint": "^8.29.0",
+        "prettier": "^2.8.1"
     }
 }
