@@ -11,17 +11,26 @@
     },
     "scripts": {
         "start": "node server.js",
-        "prettier": "prettier --config .prettierrc *.js --write",
-        "eslint": "eslint --config .eslintrc *.js "
+        "prettier": "prettier --config .prettierrc **/*.js --write",
+        "eslint": "eslint --config .eslintrc dist/*.js ",
+        "build": "npx tsc",
+        "jasmine": "jasmine",
+        "tests": "npm run build && npm run jasmine "
     },
     "dependencies": {
-        "express": ">=4.16.1"
+        "express": ">=4.16.1",
+        "jasmine": "^4.5.0",
+        "jasmine-spec-reporter": "^7.0.0"
     },
     "engines": {
         "npm": ">=18.12.0"
     },
     "devDependencies": {
+        "@types/jasmine": "^4.3.1",
+        "@types/node": "^18.11.12",
         "eslint": "^8.29.0",
-        "prettier": "^2.8.1"
+        "prettier": "^2.8.1",
+        "ts-node": "^10.9.1",
+        "typescript": "^4.9.4"
     }
 }
